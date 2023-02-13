@@ -1,4 +1,4 @@
-# UFCPlusPlusA
+# UFCPlusPlus
 
 Questa è un'implementazione C++ dell'algoritmo UFC++A, che è una variante dell'algoritmo UFC++.
 L'algoritmo UFC++A è una variante dell'algoritmo UFC++, che è una variante dell'algoritmo UFC.
