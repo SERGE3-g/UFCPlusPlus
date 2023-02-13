@@ -10,6 +10,15 @@ pari da 0 a 20
 #include <iostream>
 
 using namespace std;
+void stampaPari(int n) {
+    int i = 0;
+    while (i <= n) {
+        if (i % 2 == 0) {
+            cout << i << endl;
+        }
+        i++;
+    }
+}
 
 int main()
 {
