@@ -2,7 +2,7 @@
 // Created by gueas on 13/02/2023.
 //
 
-/*
+/*c
  * Stampa la tabellina del 7 ciao
  *
  */

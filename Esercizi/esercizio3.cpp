@@ -21,7 +21,7 @@ void somma(int n) {
     cout << "La somma dei primi " << n << " numeri interi e': " << somma;
 }
 
-int main() {
+/*int main() {
     int i = 0;
     int somma = 0;
     while (i <= 100) {
@@ -30,7 +30,16 @@ int main() {
     }
     cout << "La somma dei primi 100 numeri interi e': " << somma;
     return 0;
-}
+}*/
+
+int main() {
+    int i = 0;
+    int somma = 0;
+    for (i = 0; i <= 10; i++) {
+        somma += i;
+    }
+    cout << "La somma dei primi 100 numeri interi e': " << somma;
+    }
 
 
 
