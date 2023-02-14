@@ -3,7 +3,7 @@
 //
 
 /*
- * Scrivere un programma che stampa i numeri
+ *Scrivere un programma che stampa i numeri
 pari da 0 a 20
  */
 
@@ -29,5 +29,7 @@ int main()
         }
         i++;
     }
+    stampaPari(20);
     return 0;
 }
+    //https://www.geeksforgeeks.org/stampa-programma-che-stampa-i-numeri/
