@@ -12,25 +12,33 @@
 
 using namespace std;
 
+// creo una funzione che chiede all'utente di inserire 10 numeri
+
 int inserireNumero(int numero) {
     cout << "Inserire un numero: ";
     cin >> numero;
     return numero;
 }
+// creo una funzione che determina il numero più grande tra questi
 
-void stampaNumero(int numero) {
-    cout << "Il numero inserito e': " << numero << endl;
+int inserireNumero(int numero, int numero2) {
+    cout << "Inserire un numero: ";
+    cin >> numero;
+    cin >> numero2;
+    return numero * numero2;
+}
+void stampaNumero(int numero ,int numero2) {
+    cout << "Il numero piu' grande tra questi e': " << numero * numero2;
+    return;
 }
 
 int main() {
-    int numero = 0;
-    int max = 0;
-    for (int i = 0; i < 10; i++) {
-        numero = inserireNumero(numero);
-        if (numero > max) {
-            max = numero;
-        }
-    }
-    stampaNumero(max);
+    int numero = 10;
+    int numero2 = 15;
+
+    int result = inserireNumero(numero);
+    int result2 = inserireNumero(numero, numero2);
+    stampaNumero(result, result2);
+
     return 0;
 }

@@ -11,6 +11,7 @@
 #include <iostream>
 
 using namespace std;
+// creo la funzione che calcola i numeri divisibili per 3
 
 int calcDivisibili(int n) {
     int i = 0;
@@ -28,6 +29,7 @@ void stampaNumeri(int n) {
         cout << i << endl;
     }
 }
+// In main chiamo la funzione e stampo i numeri divisibili per 3
 
 int main() {
     int i = 0;

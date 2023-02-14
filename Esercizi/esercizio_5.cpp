@@ -11,6 +11,7 @@
 #include <iostream>
 
 using namespace std;
+// creo una funzione che visualizza i numeri da 300 a 150 in ordine decrescente
 
 int visualizzaDecrescente(int n) {
     int i = 0;
@@ -19,6 +20,7 @@ int visualizzaDecrescente(int n) {
     }
     return 0;
 }
+// nel main chiamo la funzione e stampo i numeri da 300 a 150 in ordine decrescente
 
 int main() {
     int i = 0;

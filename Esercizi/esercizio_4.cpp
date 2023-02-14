@@ -12,6 +12,8 @@
 
 using namespace std;
 
+// creo una funzione che calcola la somma dei quadrati dei primi 10 numeri naturali
+
 int calcolaSommaQuadrati(int n){
     int sum = 0;
     for (int i = 0; i < n; i++) {
