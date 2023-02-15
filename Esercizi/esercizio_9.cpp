@@ -14,6 +14,8 @@ F(n) = F(n-1) + F(n-2) per n > 1
 
 
 #include <iostream>
+#include <string>
+#include <cmath>
 
 
 
@@ -33,18 +35,19 @@ int fibonacci(int n) {
 
 void fibonacciQuanto(int x) {
     int i = 0;
+    int n = 0;
     while (i <= x) {
-        cout << fibonacci(i) << endl;
+        n = fibonacci(i);
+        cout << n << endl;
         i++;
     }
 }
 
 int main() {
     int result = fibonacci(10);
-    int x = 0;
-    cout << "Inserire un numero: ";
-    cin >> x;
-    fibonacciQuanto(x);
+    cout << result << endl;
+    fibonacciQuanto(15);
+
     return 0;
 
 }
