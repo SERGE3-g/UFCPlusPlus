@@ -33,7 +33,7 @@ int fibonacci(int n) {
 
 //  ho provato con while
 
-void fibonacciQuanto(int x) {
+void fibonacciQuanti(int x) {
     int i = 0;
     int n = 0;
     while (i <= x) {
@@ -44,10 +44,9 @@ void fibonacciQuanto(int x) {
 }
 
 int main() {
-    int result = fibonacci(10);
-    cout << result << endl;
-    fibonacciQuanto(15);
-
+    //int result = fibonacci(10);
+   // cout << result << endl; // ho provato a stampare fino a 10
+    fibonacciQuanti(15); // ho provato a stampare fino a 15
     return 0;
 
 }
