@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>
-#include <cmath>
+
 
 using namespace std;
 // funzione 1
@@ -39,8 +39,13 @@ bool isEven(int x) {
 
 //creo la funzione con double costoTotale che mi permette di trovare il costo totale e interesse di un prodotto
 double costoTotale( double prezzo, double interesse) {
-    double costo = prezzo + (prezzo * interesse);
-    return costo;
+    for (int i = 0; i < 10; ++i) {
+        prezzo = prezzo + (prezzo * interesse);
+        if (isEven(prezzo)) {
+            return prezzo;
+        }
+
+    }
 
 }
 
@@ -99,6 +104,13 @@ if (a > b && a > c) {
 
 void stampaNome(string nome) {
     cout << nome << endl;
+    if (nome.length() == 0) {
+        cout << "SERGE" << endl;
+    }
+    if (nome.length() == 1) {
+        cout << "SERGE" << endl;
+    }
+
 }
 
 
@@ -135,7 +147,7 @@ void equazione(int a, int b, int c) {
 //creo una funzione con bool bisestile che mi permette di trovare se un anno è bisestile o no
 
 bool bisestile(int a, int b, int c) {
-    if (a > b && a > c) {
+    if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
         return true;
     } else {
         return false;
@@ -144,12 +156,13 @@ bool bisestile(int a, int b, int c) {
 
 // funzione 10
 
-// creo una funzione con  void stampaTabellina che mi permette di stampare la tabellina di un numero n
+// creo una funzione con void stampaTabellina che mi permette di stampare la tabellina di un numero n
 
 void stampaTabellina(int n) {
     for (int i = 1; i <= 10; i++) {
         cout << n << " * " << i << " = " << n * i << endl;
     }
+    cout << endl;
 }
 
 // funzione 11
@@ -157,12 +170,10 @@ void stampaTabellina(int n) {
 //creo una funzione con void stampaTabelline che mi permette di stampare le tabelline n e m
 
 void stampaTabelline(int n, int m) {
-    for (int i = 1; i <= 10; i++) {
-        cout << n << " * " << i << " = " << n * i << endl;
+    for (int i = n; i <= m; i++) {
+        stampaTabellina(i);
     }
-    for (int i = 1; i <= 10; i++) {
-        cout << m << " * " << i << " = " << m * i << endl;
-    }
+    cout << stampaTabellina<< endl;
 }
 
 // funzione 12
@@ -170,29 +181,28 @@ void stampaTabelline(int n, int m) {
 //creo una funziona con void stampaPari (int quanti) che mi permette di stampare i primi n numeri pari
 
 void stampaPari(int quanti, int n) {
-    int i = 0;
-    while (i < quanti) {
+    for (int i = 1; i <= 2; i++) {
         if (isEven(n)) {
             cout << n << endl;
-            i++;
         }
         n++;
     }
 }
 
 int main() {
-    cout << piuGrande(5, 6) << endl;
-    cout << isEven(5) << endl;
-    cout << costoTotale(5, 0.2) << endl;
-    buttaFuori(17);
-    decrescente(5, 6, 7);
-    stampaNome("SERGE");
-    cout << isBetween(5, 6, 7) << endl;
-    equazione(5, 6, 7);
-    cout << bisestile(5, 6, 7) << endl;
+    int result = piuGrande(5, 10);
+    cout << result << endl;
+    cout << isEven(10) << endl;
+    cout << costoTotale(10, 0.1) << endl;
+    buttaFuori(20);
+    decrescente(10, 20, 30);
+    stampaNome("Serge");
+    cout << isBetween(10, 20, 30) << endl;
+    equazione(1, 2, 3);
+    cout << bisestile(2000, 2004, 2008) << endl;
     stampaTabellina(5);
-    stampaTabelline(5, 6);
-    stampaPari(5, 6);
+    stampaPari(2, 3);
+
     return 0;
 }
 
