@@ -59,8 +59,13 @@ L'algoritmo Union-Find-Union-Find-Union-Find-Union è una variante dell'algoritm
 
 
 
-
-
+                                                          *                   ***********         *           
+                                                          *   *               ***********         * 
+                                                          *   *  *            ***********         *
+                                                          *   *   *           ***********         *
+                                                          *   *   *  *        ***********         *
+                                                          *   *   *   *       ***********         * ******** 
+    
 
 
 

@@ -18,28 +18,34 @@
 
 using namespace std;
 
-int numeroPositivo(int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum = sum + i;
+int pippo(int n) {
+    int k = 1;
+    int somma = 1;
+    while (somma <= n) {
+        k++;
+        somma = somma + k;
     }
-    return sum;
-}
+    return k - 1;
 
-void determinaMassimo(int x) {
-    int  sum = 0;
-    for (int i = 0; i <= x; i++) {
-        if (i % 2 == 0) {
-            sum = sum + i;
-        }
+}
+int pippoFor(int n) {
+    int k = 1;
+    int somma = 1;
+    for (int k = 1; somma <= n; k++) {
+        k++;
+        somma = somma + k;
     }
+    return k - 1;
 }
 
 int main() {
-    int result = numeroPositivo(20);
-    cout << result << endl;
-    determinaMassimo(result);
+
+    int result = pippo(20);
+    cout <<result;
+    cout <<"\n";
+    int resultFor = pippoFor(20);
     return 0;
 }
+
 
 
