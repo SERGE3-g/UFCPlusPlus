@@ -8,9 +8,34 @@
  */
 
 
-#include <string.h>
+#include <string>
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <cmath>
+#include <algorithm>
+#include <vector>
+#include <map>
 
 using namespace std;
 
+string parola;
+string parolaMax;
+string parolaMin;
+
+int main() {
+    for (int i = 0; i < 10; i++) {
+        cout << "Inserisci una parola: ";
+        cin >> parola;
+        if (parola.length() > parolaMax.length()) {
+            parolaMax = parola;
+        }
+        if (parola.length() < parolaMin.length()) {
+            parolaMin = parola;
+        }
+    }
+    cout << "La parola piu' lunga e': " << parolaMax << endl;
+    cout << "La parola piu' corta e': " << parolaMin << endl;
+    return 0;
+}
 

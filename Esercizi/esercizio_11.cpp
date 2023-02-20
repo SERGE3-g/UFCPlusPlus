@@ -13,12 +13,10 @@
 
 using namespace std;
 
-bool ciSonoDoppie(string ciaoooo) {
-    for (int i = 0; i < ciaoooo.length(); i++) {
-        for (int j = i + 1; j < ciaoooo.length(); j++) {
-            if (ciaoooo[i] == ciaoooo[j]) {
-                return true;
-            }
+bool ciSonoDoppie(string parola) {
+    for (int i = 0; i < parola.length(); i++) {
+        if (parola[i] == parola[i + 1]) {
+            return true;
         }
     }
     return false;
@@ -26,12 +24,18 @@ bool ciSonoDoppie(string ciaoooo) {
 
 int main() {
     string parola;
+    bool doppie = false;
     cout << "Inserisci una parola: ";
     cin >> parola;
-    if (ciSonoDoppie(parola)) {
-        cout << "Vero" << endl;
-    } else {
-        cout << "Falso" << endl;
+    while (parola!= "2") {
+        if (ciSonoDoppie(parola) == true) {
+            doppie = true;
+            cout << doppie << endl;
+            cin >> parola;
+        } else {
+            doppie = false;
+            cout << doppie << endl;
+            cin >> parola;
+        }
     }
-    return 0;
 }
